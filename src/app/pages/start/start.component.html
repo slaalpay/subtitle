@@ -1,0 +1,17 @@
+<div class="content-center">
+  <mat-card class="url-card">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <input
+          matInput
+          type="url"
+          placeholder="Enter your url"
+          [formControl]="url"
+          required
+        />
+        <mat-error *ngIf="url.hasError('pattern')">
+          please enter a youtube url
+        </mat-error>
+      </mat-form-field>
+      <button type="submit" (click)="submit()" mat-button>Enter</button>
+  </mat-card>
+</div>

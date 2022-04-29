@@ -1,0 +1,13 @@
+.subtitle-card{
+    width: 100%;
+    margin-top: -90px;
+}
+.caption-button{
+    align-items: center;
+}
+.example-margin {
+    margin: 0 10px;
+  }
+.video-section{
+    display: block;
+}

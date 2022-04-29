@@ -1,0 +1,28 @@
+<div *ngIf="isButtonClick">
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile
+    ><mat-form-field class="subtitle-input" appearance="standard">
+      <mat-label>Enter subtitle</mat-label>
+      <textarea  rows="6" cols="100"
+        matInput
+        placeholder=""
+      ></textarea></mat-form-field>
+      <button (click)="deleteSubtitle()" mat-icon-button class="delete-icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-grid-tile>
+  <mat-grid-tile>
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="standard">
+          <mat-label>Start</mat-label>
+          <input step="2" type="time" matInput>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" appearance="standard">
+          <mat-label>Finish</mat-label>
+          <input step="2" type="time" matInput >
+        </mat-form-field>
+      </form>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>
